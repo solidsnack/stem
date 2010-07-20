@@ -32,6 +32,10 @@ module Stem
       "ImageId" => ami
     }
 
+    opt["KeyName"] = config["key-pair"] || "default"
+    opt["SecurityGroup.0"] = config["security-group"] || "default"
+    opt["InstanceType"] = config["type"] if config["type"]
+
     if config["volumes"]
       devices = []
       sizes = []
