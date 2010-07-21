@@ -17,6 +17,7 @@ module Stem
         opts.separator "  $ stem launch prototype.config prototype.sh"
         opts.separator "  $ stem list"
         opts.separator "  $ stem capture name instance-id"
+        opts.separator "  $ stem destroy instance-id"
 
         opts.separator " "
         opts.separator "Options:"
